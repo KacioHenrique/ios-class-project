@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		7A9618632459BE830013AC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9618622459BE830013AC00 /* Assets.xcassets */; };
 		7A9618712459BE830013AC00 /* RogaLabsProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9618702459BE830013AC00 /* RogaLabsProjectTests.swift */; };
 		7A96187C2459BE840013AC00 /* RogaLabsProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A96187B2459BE840013AC00 /* RogaLabsProjectUITests.swift */; };
+		7AA4184D2459FE0700E97763 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4184C2459FE0700E97763 /* PostCell.swift */; };
+		7AA4184F245A014700E97763 /* ModelViewMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4184E245A014700E97763 /* ModelViewMainController.swift */; };
+		7AA41851245A021600E97763 /* ApiManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA41850245A021600E97763 /* ApiManeger.swift */; };
 		7AB6B474D5819E0A423F639F /* Pods_RogaLabsProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF0E84D4E9A2495D9D9026 /* Pods_RogaLabsProjectTests.framework */; };
 		A9C9764B880B438E7BED6525 /* Pods_RogaLabsProject_RogaLabsProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81478F683E1090268F4B37B /* Pods_RogaLabsProject_RogaLabsProjectUITests.framework */; };
 		C0060FA515388C1AA5AE529D /* Pods_RogaLabsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29801844BE716B8666401E2E /* Pods_RogaLabsProject.framework */; };
@@ -54,6 +57,9 @@
 		7A9618772459BE830013AC00 /* RogaLabsProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaLabsProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A96187B2459BE840013AC00 /* RogaLabsProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaLabsProjectUITests.swift; sourceTree = "<group>"; };
 		7A96187D2459BE840013AC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA4184C2459FE0700E97763 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		7AA4184E245A014700E97763 /* ModelViewMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewMainController.swift; sourceTree = "<group>"; };
+		7AA41850245A021600E97763 /* ApiManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManeger.swift; sourceTree = "<group>"; };
 		7B99DC8EE3C5C8FB7A4140E9 /* Pods-RogaLabsProject-RogaLabsProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsProject-RogaLabsProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsProject-RogaLabsProjectUITests/Pods-RogaLabsProject-RogaLabsProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		850DD45794886A078DEF1DAA /* Pods-RogaLabsProject-RogaLabsProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsProject-RogaLabsProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsProject-RogaLabsProjectUITests/Pods-RogaLabsProject-RogaLabsProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8789446F7C8CEF3E5CA8F42E /* Pods-RogaLabsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsProjectTests.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsProjectTests/Pods-RogaLabsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +105,6 @@
 				1F34818D95461FAC7F044156 /* Pods-RogaLabsProjectTests.debug.xcconfig */,
 				8789446F7C8CEF3E5CA8F42E /* Pods-RogaLabsProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +139,9 @@
 				7A9618622459BE830013AC00 /* Assets.xcassets */,
 				7A9618672459BE830013AC00 /* Info.plist */,
 				7A28A0592459C4CB006C0DC2 /* Launch Screen.storyboard */,
+				7AA4184C2459FE0700E97763 /* PostCell.swift */,
+				7AA4184E245A014700E97763 /* ModelViewMainController.swift */,
+				7AA41850245A021600E97763 /* ApiManeger.swift */,
 			);
 			path = RogaLabsProject;
 			sourceTree = "<group>";
@@ -404,9 +412,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA41851245A021600E97763 /* ApiManeger.swift in Sources */,
 				7A96185E2459BE820013AC00 /* ViewController.swift in Sources */,
 				7A96185A2459BE820013AC00 /* AppDelegate.swift in Sources */,
 				7A96185C2459BE820013AC00 /* SceneDelegate.swift in Sources */,
+				7AA4184F245A014700E97763 /* ModelViewMainController.swift in Sources */,
+				7AA4184D2459FE0700E97763 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

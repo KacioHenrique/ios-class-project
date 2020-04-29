@@ -7,22 +7,37 @@
 //
 
 import UIKit
-
+import SnapKit
 class ViewController: UIViewController {
-    
     override func loadView() {
         super.loadView()
-        setupUI()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
     }
 
     fileprivate func setupUI(){
-        let view = UIView(frame: UIScreen.main.bounds)
-        view.backgroundColor = .green
-        self.view = view
+        let tableView = UITableView(frame: .zero)
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.bottom.left.right.top.equalToSuperview()
+        }
     }
 }
-
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        
+        return cell
+    }
+    
+    
+}
