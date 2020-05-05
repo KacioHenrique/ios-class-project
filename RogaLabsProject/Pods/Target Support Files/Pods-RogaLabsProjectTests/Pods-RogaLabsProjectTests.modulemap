@@ -1,0 +1,6 @@
+framework module Pods_RogaLabsProjectTests {
+  umbrella header "Pods-RogaLabsProjectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
