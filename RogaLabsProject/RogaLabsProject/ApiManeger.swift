@@ -11,7 +11,7 @@ public enum MetodoRequest {
     case post(Int,String)
     case get
 }
-class ApiManeger {
+final class ApiManeger {
     private let baseUrl = URL(string: "https://jsonplaceholder.typicode.com/posts")
     static let shared = ApiManeger()
     func makeRequest(operation:MetodoRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
